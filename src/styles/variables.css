@@ -1,0 +1,21 @@
+:root {
+    --ufra-blue: #1E3A8A;
+    --ufra-dark-blue: #172554;
+    --ufra-yellow: #F59E0B;
+    --text-primary: #2D3748;
+    --text-secondary: #718096;
+    --bg-primary: #F7FAFC;
+    --white: #FFFFFF;
+    --border-radius: 0.375rem;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --primary-color: #4CAF50;
+    --secondary-color: #FFC107;
+    --background-color: #FAFAFA;
+    --text-color: #212121;
+    --border-color: #BDBDBD;
+    --sidebar-width-collapsed: 80px;
+    --sidebar-width-expanded: 200px;
+    --header-height: 60px;
+    --button-size: 160px;
+    --button-hover-scale: 1.05;
+  }

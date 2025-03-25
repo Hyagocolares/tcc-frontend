@@ -1,0 +1,92 @@
+/* src/styles/home/Header.css */
+.header-ufra {
+  position: fixed;
+  top: 0;
+  left: var(--sidebar-width-collapsed);
+  height: var(--header-height);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  width: calc(100% - var(--sidebar-width-collapsed));
+  transition: all 0.3s ease;
+  gap: 15px;
+}
+
+.logo-placeholder-ufra {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.header-title-ufra {
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+  flex-grow: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+.logout-button-ufra {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 20px;
+  min-width: 80px;
+  width: 10rem;
+}
+
+.logout-button-ufra:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container.sidebar-expanded .header-ufra {
+  left: var(--sidebar-width-expanded);
+  width: calc(100% - var(--sidebar-width-expanded));
+}
+
+.container.sidebar-expanded .logo-placeholder-ufra {
+  transform: scale(1.1);
+}
+
+.container.sidebar-expanded .logout-button-ufra {
+  width: 10rem;
+}
+
+
+@media (max-width: 480px) {
+  .header-ufra {
+    padding: 0 5px;
+    max-width: 350px;
+  }
+
+  .logo-placeholder-ufra {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-title-ufra {
+    font-size: 1rem;
+    width: 2rem;
+  }
+
+  .logout-button-ufra {
+    padding: 5px 8px;
+    font-size: 0.7rem;
+    right: 5px;
+    min-width: 60px;
+    width: 8rem;
+  }
+}

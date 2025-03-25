@@ -1,0 +1,182 @@
+/* src/styles/request/ItineraryForm.css */
+/* .form-section {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .form-section th,
+  .form-section td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .form-section th {
+    background-color: #f7fafc;
+    color: #2d3748;
+    font-weight: 600;
+  }
+  
+  .form-section tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .form-section input[type="date"],
+  .form-section input[type="time"],
+  .form-section input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .form-section input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+  }
+  
+  .remove-btn {
+    background: #fed7d7;
+    color: #c53030;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .remove-btn:hover {
+    background: #feb2b2;
+  }
+  
+  button[type="button"] {
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+  }
+  
+  button[type="button"]:hover {
+    background: #3182ce;
+  }
+  
+  .itineraryForm {
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .itineraryForm > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .itineraryForm div > div {
+    margin-bottom: 1rem;
+  }
+  
+  .itineraryForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2d3748;
+  }
+  
+  .itineraryForm select,
+  .itineraryForm input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    background: white;
+  }
+  
+  .itineraryForm input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+  
+  .itineraryForm input[type="number"]::-webkit-outer-spin-button,
+  .itineraryForm input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .form-section {
+      display: block;
+    }
+    
+    .form-section thead {
+      display: none;
+    }
+    
+    .form-section tr {
+      display: block;
+      margin-bottom: 1.5rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 1rem;
+    }
+    
+    .form-section td {
+      display: block;
+      text-align: right;
+      padding: 0.5rem;
+    }
+    
+    .form-section td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: 500;
+      color: #2d3748;
+    }
+    
+    .itineraryForm > div {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .form-section tr {
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+    cursor: pointer;
+  }
+  
+  select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+  } */
+   

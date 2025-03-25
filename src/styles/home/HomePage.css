@@ -1,0 +1,37 @@
+/* src/assets/styles/HomePage.css */
+.container.sidebar-collapsed .container-main {
+  margin-left: var(--sidebar-width-collapsed);
+  transition: margin-left 0.3s ease;
+}
+
+.container.sidebar-expanded .container-main {
+  margin-left: var(--sidebar-width-expanded);
+  transition: margin-left 0.3s ease;
+}
+
+.container.sidebar-expanded .header {
+  left: var(--sidebar-width-expanded);
+}
+
+.container-main {
+  flex: 1;
+  margin-left: var(--sidebar-width-collapsed);
+}
+
+.main-content {
+  margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.version-number {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  color: var(--border-color);
+  font-size: 0.9rem;
+  font-weight: 300;
+}

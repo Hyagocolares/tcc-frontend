@@ -1,0 +1,138 @@
+/* src/styles/request/LocationsAndDatesForm.css */
+/* .form-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .location {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #f8fafc;
+    position: relative;
+  }
+  
+  .location label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2d3748;
+  }
+  
+  .location input[type="text"],
+  .location input[type="number"],
+  .location input[type="date"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .location input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+  }
+  
+  .location input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+  
+  .location input[type="number"]::-webkit-outer-spin-button,
+  .location input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .location input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+  }
+  
+  .remove-btn {
+    background: #fed7d7;
+    color: #c53030;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .remove-btn:hover {
+    background: #feb2b2;
+  }
+  
+  button[type="button"] {
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  button[type="button"]:hover {
+    background: #3182ce;
+  }
+  
+  @media (max-width: 768px) {
+    .location {
+      padding: 1rem;
+    }
+    
+    .location input[type="date"] {
+      width: 100%;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .location {
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .date-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4299e1;
+  }
+  
+  input::placeholder {
+    color: #a0aec0;
+    opacity: 1;
+  }
+  
+  input:focus-visible {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+  } */
+

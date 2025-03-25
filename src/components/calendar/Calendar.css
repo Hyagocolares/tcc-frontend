@@ -1,0 +1,82 @@
+/* src/components/calendar/Calendar.css */
+.calendar-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 6rem;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e2e8f0;
+  border-radius: 1rem;
+}
+
+.calendar-left {
+  flex: 2;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  min-width: 1150px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-right {
+  flex: 1;
+  padding: 0 2rem;
+  min-width: 350px;
+  max-width: 450px;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.rbc-calendar {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.rbc-header {
+  background-color: #11a894;
+  color: white;
+  padding: 10px 0;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.rbc-today {
+  background-color: #e8f4ff !important;
+}
+
+.rbc-event {
+  background-color: #3b82f6 !important;
+  border-radius: 4px !important;
+  padding: 2px 5px !important;
+  margin: 2px 0 !important;
+  pointer-events: none;
+  cursor: default;
+}
+
+.event-details {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3b82f6;
+}
+
+.event-details h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.event-details p {
+  color: #64748b;
+  margin: 0.3rem 0;
+}
+
+.calendar-right h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}

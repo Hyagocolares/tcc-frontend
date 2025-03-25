@@ -1,0 +1,392 @@
+  .container-request {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+  }
+  
+
+  /* Main Content Styles */
+  .main-content-request {
+    grid-column: 2;
+    padding: 2rem;
+    margin-top: 70px;
+    background: #f9f9f9;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .form-container-request {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid var(--dark-green);
+  }
+  
+  .form {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .form-column {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .form {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .add-button {
+    background: var(--dark-green);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background: var(--hover-green);
+  }
+  
+  .date-range {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .error-message {
+    color: var(--error-red);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+  
+  .submit-button {
+    background: var(--dark-green);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+  
+  .submit-button:hover {
+    background: var(--hover-green);
+  }
+
+  /* Novos estilos para a segunda parte */
+.form-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+.section-title {
+  color: var(--dark-green);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.character-counter {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.route-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.route-table th,
+.route-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.route-table th {
+  background-color: var(--light-green);
+  font-weight: 600;
+}
+
+.route-table input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.resource-group {
+  margin-bottom: 1rem;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.checkbox-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--dark-green);
+}
+
+@media (max-width: 768px) {
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .route-table {
+    min-width: 600px;
+  }
+}
+
+/* Estilo do conteúdo principal do formulário */
+.main-content-request {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário */
+.form-title-request {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container do formulário */
+.form-container-request {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do formulário */
+.form-request {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Organização dos campos em colunas */
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Agrupamento de cada conjunto de campos */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilos para labels */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilos para inputs, selects e textareas */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Estilos para tabelas (por exemplo, no formulário de Itinerário) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos específicos para componentes filhos */
+
+/* Solicitante, Subjects, Locations, Itinerary, Resources, TeacherConsent */
+.solicitante-input,
+.subjects-input,
+.locations-and-dates,
+.itinerary-form,
+.resources-necessary,
+.teacher-consent {
+  margin-bottom: 20px;
+}
+
+/* Exemplo de estilo para cada grupo de "child" que pode ter borda e fundo diferenciados */
+.solicitante-input .form-group,
+.subjects-input .form-group,
+.locations-and-dates .location,
+.itinerary-form .subject,
+.resources-necessary .resource,
+.teacher-consent .teacher {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Estilo para inputs agrupados, caso utilize a classe "input-group" */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Datalist não necessita de estilos específicos, mas podem ser ajustados se necessário */
+datalist option {
+  font-size: 14px;
+}
+
+/* Estilos para a seção de assinatura (TeacherConsent) */
+#signatureTeacher,
+#signatureTeacher * {
+  margin-top: 10px;
+}
+
+/* Classe para esconder elementos */
+.hidden {
+  display: none;
+}
+
+
+/* Botao de adição */
+.add-button {
+  padding: 5px 10px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #27ae60;
+}
+
+/* Botao de Exclusao */
+
+.remove-btn {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Botões de navegação Next */
+.next-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,43 @@
+/* Custom Toolbar Styling */
+.custom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.custom-toolbar .rbc-btn-group button {
+    background: #78a9f8;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-calendar {
+    margin: 0.2rem;
+    width: 10rem;
+}
+
+.custom-toolbar .rbc-btn-group button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.custom-toolbar .rbc-toolbar-label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button.rbc-button-link {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent !important;
+}
