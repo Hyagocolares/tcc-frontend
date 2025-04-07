@@ -187,6 +187,15 @@ const Calendar: React.FC = () => {
     const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
     const [selectedEvents, setSelectedEvents] = useState<MyEvent[]>([]);
 
+    useEffect(() => {
+        const today = new Date();
+        setSelectedDate(today);
+        const filtered = events.filter(event =>
+            moment(event.start).isSame(today, 'day')
+        );
+        setSelectedEvents(filtered);
+    }, [events]);
+
     const formatData = (data: any[]): MyEvent[] => {
         return data.map((item) => {
             const firstLocation = item.locations[0];

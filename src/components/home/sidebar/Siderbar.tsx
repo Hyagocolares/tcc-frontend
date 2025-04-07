@@ -41,6 +41,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) => {
                             <span className="menu-text">Home</span>
                         </Link>
                     </li>
+
                     <li>
                         <Link
                             to="/calendar"
@@ -56,6 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) => {
                             <span className="menu-text">Calendário</span>
                         </Link>
                     </li>
+
                     <li>
                         <Link
                             to="/request"
@@ -71,22 +73,26 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) => {
                             <span className="menu-text">Requerimento</span>
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            to="/settings"
-                            className="menu-item"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                setTimeout(() => {
-                                    window.location.href = "/settings";
-                                }, 500);
-                            }}
-                        >
-                            <i className="material-icons">settings</i>
-                            <span className="menu-text">Configurações</span>
-                        </Link>
-                    </li>
+
                     {userRole === 'Director' && (
+                        <li>
+                            <Link
+                                to="/registrations"
+                                className="menu-item"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setTimeout(() => {
+                                        window.location.href = "/registrations";
+                                    }, 500);
+                                }}
+                            >
+                                <i className="material-icons">group_add</i>
+                                <span className="menu-text">cadastro</span>
+                            </Link>
+                        </li>
+                    )}
+
+                    {false && (
                         <li>
                             <Link
                                 to="/report"
@@ -103,6 +109,25 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) => {
                             </Link>
                         </li>
                     )}
+
+                    {false && (
+                    <li>
+                        <Link
+                            to="/settings"
+                            className="menu-item"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setTimeout(() => {
+                                    window.location.href = "/settings";
+                                }, 500);
+                            }}
+                        >
+                            <i className="material-icons">settings</i>
+                            <span className="menu-text">Configurações</span>
+                        </Link>
+                    </li>
+                    )}
+
                 </ul>
             </nav>
         </div>

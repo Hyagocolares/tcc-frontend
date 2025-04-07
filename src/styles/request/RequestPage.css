@@ -1,4 +1,5 @@
-.form-container-request {
+/* src/styles/request/RequestPage.css */
+/* .form-container-request {
   width: 100%;
   max-width: 1200px;
   margin: 100px 0 0 auto;
@@ -129,4 +130,8 @@ button.remove-btn:hover {
     opacity: 1;
     transform: translateY(0);
   }
+} */
+
+.table-list {
+  margin-top: 70px;
 }

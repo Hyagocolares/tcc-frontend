@@ -19,6 +19,7 @@
   font-weight: bold;
   color: var(--primary-color);
   text-transform: uppercase;
+  clip-path: inset(144px -6px 109px -13px);
 }
 
 .university-name {

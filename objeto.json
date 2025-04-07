@@ -1,0 +1,150 @@
+[
+  {
+    "user": {
+      "id": 3
+    },
+    "companions": [
+      {
+        "id": 1
+      }
+    ],
+    "status": "Rascunho",
+    "subjects": [
+      {
+        "subject": {
+          "id": 0
+        },
+        "classGroup": "",
+        "studentCount": 0,
+        "workload": 0,
+        "fileBase64": "",
+        "fileName": "",
+        "fileType": "application/octet-stream"
+      }
+    ],
+    "locations": [
+      {
+        "location": "",
+        "municipality": "",
+        "periodStart": "",
+        "periodEnd": "",
+        "totalDistanceKm": 0
+      }
+    ],
+    "itinerary": [
+      {
+        "date": "",
+        "origin": "",
+        "destination": "",
+        "activity": "",
+        "departureTime": "",
+        "arrivalTime": "",
+        "unpavedRoadKm": "Sim",
+        "kilometers": 1,
+        "roadCondition": "Mediano",
+        "hasWoodenBridge": "Não",
+        "hasFerry": "Sim",
+        "hasToll": "Sim"
+      }
+    ],
+    "resources": [
+      {
+        "resource": "",
+        "quantity": 0,
+        "quantityPerDay": 0
+      }
+    ],
+    "consents": [
+      {
+        "teacherName": {
+          "id": 0,
+          "name": ""
+        },
+        "disciplina": {
+          "id": 0,
+          "name": ""
+        },
+        "date": "",
+        "timeIn": "",
+        "timeOut": "",
+        "signature": ""
+      }
+    ]
+  },
+  {
+    "user": {
+      "id": 1
+    },
+    "companions": [
+      {
+        "id": 3
+      }
+    ],
+    "status": "Rascunho",
+    "subjects": [
+      {
+        "subject": {
+          "id": 0
+        },
+        "classGroup": "",
+        "studentCount": 0,
+        "workload": 0,
+        "fileData": "",
+        "fileName": "",
+        "fileType": "application/octet-stream"
+      }
+    ],
+    "locations": [
+      {
+        "location": "UFRA",
+        "municipality": "Paragominas",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-04-01",
+        "totalDistanceKm": 1
+      }
+    ],
+    "itinerary": [
+      {
+        "date": "2025-04-01",
+        "origin": "1",
+        "destination": "1",
+        "activity": "1",
+        "departureTime": "11:11",
+        "arrivalTime": "11:11",
+        "unpavedRoadKm": "Sim",
+        "kilometers": 1,
+        "roadCondition": "Ruim",
+        "hasWoodenBridge": "Sim",
+        "hasFerry": "Sim",
+        "hasToll": "Sim"
+      }
+    ],
+    "resources": [
+      {
+        "resource": "Café",
+        "quantity": 1,
+        "quantityPerDay": 1
+      }
+    ],
+    "consent": [
+      {
+        "teacher": {
+          "id": 3
+        },
+        "disciplina": {
+          "id": 0
+        },
+        "teacherDetails": {
+          "id": 3
+        },
+        "discipline": {
+          "id": 0
+        },
+        "date": "2025-03-31",
+        "timeIn": "22:22",
+        "timeOut": "22:22",
+        "signature": ""
+      }
+    ]
+  }
+]

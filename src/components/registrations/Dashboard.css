@@ -1,0 +1,182 @@
+/* src/components/registrations/Dashboard.css */
+.dashboard-container {
+    padding: 4rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f7fa;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #2d3748;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.dashboard-link {
+    background-color: #4299e1;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(66, 153, 225, 0.2);
+    border: 2px solid transparent;
+}
+
+.dashboard-link:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(66, 153, 225, 0.3);
+    border-color: #2b6cb0;
+}
+
+.dashboard-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.dashboard-buttons button {
+    background-color: #48bb78;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(72, 187, 120, 0.2);
+}
+
+.dashboard-buttons button.btn-edit {
+    background-color: #3dc875;
+}
+
+.dashboard-buttons button.btn-remove {
+    background-color: #fc8181;
+}
+
+.dashboard-buttons button.btn-edit:hover {
+    background-color: #38a169;
+}
+
+.dashboard-buttons button.btn-remove:hover {
+    background-color: #ba4646;
+}
+
+.dashboard-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.dashboard-section:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.dashboard-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4299e1;
+    padding-bottom: 0.5rem;
+    color: #2d3748;
+}
+
+.dashboard-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.dashboard-list li {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.dashboard-list li:hover {
+    background: #edf2f7;
+    transform: translateX(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-list li button {
+    background-color: #fc8181;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.dashboard-list li button:hover {
+    background-color: #f56565;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem;
+    }
+
+    .dashboard-title {
+        font-size: 2rem;
+    }
+
+    .dashboard-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-link {
+        width: 100%;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .dashboard-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-buttons button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .dashboard-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}

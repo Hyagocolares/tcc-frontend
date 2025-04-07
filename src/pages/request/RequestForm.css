@@ -1,124 +1,121 @@
-  .container-request {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    min-height: 100vh;
-  }
-  
+.container-request {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
 
-  /* Main Content Styles */
-  .main-content-request {
-    grid-column: 2;
-    padding: 2rem;
-    margin-top: 70px;
-    background: #f9f9f9;
-    min-height: calc(100vh - 70px);
-  }
-  
-  .form-title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  
-  .form-container-request {
-    background: white;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border: 1px solid var(--dark-green);
-  }
-  
+.main-content-request {
+  grid-column: 2;
+  padding: 2rem;
+  margin-top: 70px;
+  background: #f9f9f9;
+  min-height: calc(100vh - 70px);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.form-container-request {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--dark-green);
+}
+
+.form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-column {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
   .form {
-    display: grid;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
-  
-  .form-column {
-    display: grid;
-    gap: 1.5rem;
-  }
-  
-  @media (min-width: 768px) {
-    .form {
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  label {
-    font-weight: 600;
-    color: #333;
-  }
-  
-  input {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-  }
-  
-  .input-group {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .add-button {
-    background: var(--dark-green);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .add-button:hover {
-    background: var(--hover-green);
-  }
-  
-  .date-range {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  .error-message {
-    color: var(--error-red);
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
-  }
-  
-  .submit-button {
-    background: var(--dark-green);
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-left: auto;
-  }
-  
-  .submit-button:hover {
-    background: var(--hover-green);
-  }
+}
 
-  /* Novos estilos para a segunda parte */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-button {
+  background: var(--dark-green);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-button:hover {
+  background: var(--hover-green);
+}
+
+.date-range {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.error-message {
+  color: var(--error-red);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.submit-button {
+  background: var(--dark-green);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.submit-button:hover {
+  background: var(--hover-green);
+}
+
 .form-section {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -208,13 +205,12 @@
   .checkbox-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .route-table {
     min-width: 600px;
   }
 }
 
-/* Estilo do conteúdo principal do formulário */
 .main-content-request {
   padding: 20px;
   background-color: #f9f9f9;
@@ -222,14 +218,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Título do formulário */
 .form-title-request {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Container do formulário */
 .form-container-request {
   width: 100%;
   max-width: 900px;
@@ -240,32 +234,27 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do formulário */
 .form-request {
   display: flex;
   flex-direction: column;
 }
 
-/* Organização dos campos em colunas */
 .form-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Agrupamento de cada conjunto de campos */
 .form-group {
   margin-bottom: 15px;
 }
 
-/* Estilos para labels */
 .form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-/* Estilos para inputs, selects e textareas */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -275,8 +264,6 @@
   border-radius: 4px;
 }
 
-
-/* Estilos para tabelas (por exemplo, no formulário de Itinerário) */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -294,9 +281,6 @@ table th {
   background-color: #f2f2f2;
 }
 
-/* Estilos específicos para componentes filhos */
-
-/* Solicitante, Subjects, Locations, Itinerary, Resources, TeacherConsent */
 .solicitante-input,
 .subjects-input,
 .locations-and-dates,
@@ -306,7 +290,6 @@ table th {
   margin-bottom: 20px;
 }
 
-/* Exemplo de estilo para cada grupo de "child" que pode ter borda e fundo diferenciados */
 .solicitante-input .form-group,
 .subjects-input .form-group,
 .locations-and-dates .location,
@@ -320,31 +303,25 @@ table th {
   border-radius: 4px;
 }
 
-/* Estilo para inputs agrupados, caso utilize a classe "input-group" */
 .input-group {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-/* Datalist não necessita de estilos específicos, mas podem ser ajustados se necessário */
 datalist option {
   font-size: 14px;
 }
 
-/* Estilos para a seção de assinatura (TeacherConsent) */
 #signatureTeacher,
 #signatureTeacher * {
   margin-top: 10px;
 }
 
-/* Classe para esconder elementos */
 .hidden {
   display: none;
 }
 
-
-/* Botao de adição */
 .add-button {
   padding: 5px 10px;
   background-color: #2ecc71;
@@ -358,8 +335,6 @@ datalist option {
 .add-button:hover {
   background-color: #27ae60;
 }
-
-/* Botao de Exclusao */
 
 .remove-btn {
   padding: 5px 10px;
@@ -375,7 +350,6 @@ datalist option {
   background-color: #c0392b;
 }
 
-/* Botões de navegação Next */
 .next-button {
   align-self: flex-end;
   padding: 10px 20px;

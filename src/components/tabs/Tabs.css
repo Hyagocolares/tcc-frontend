@@ -1,0 +1,18 @@
+/* src/components/tabs/Tabs.css */
+.tabs-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs-container button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+}
+
+.tabs-container button.active {
+    background: #007bff;
+    color: #fff;
+}

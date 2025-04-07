@@ -1,0 +1,226 @@
+/* src/components/request/RequestForm.css */
+.form-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: #2d3748;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #4299e1;
+    padding-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #2d3748;
+    width: 15%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+input::placeholder {
+    color: #a0aec0;
+    opacity: 1;
+}
+
+.input-group input:focus,
+input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+input:focus-visible {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+button.remove-btn {
+    background: #ff6363;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 20%;
+}
+
+button.remove-btn:hover {
+    background: #ff0e0e;
+    color: #fff;
+}
+
+button.add-btn {
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+button.add-btn:hover {
+    background: #288cea;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.back-button {
+    position: sticky;
+    top: 4rem;
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: fit-content;
+    white-space: nowrap;
+    margin-top: 2rem;
+}
+
+.back-button:hover {
+    background: #288cea;
+    transform: translateY(-2px);
+}
+
+.request-form-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    background: #f7fafc;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.request-form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.request-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.request-next-button {
+    background: #20be40;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    align-self: flex-end;
+    font-size: 1rem;
+}
+
+.request-next-button:hover {
+    background: #0e8927;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.create-request-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #20be40;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-request-button:hover {
+    background: #0e8927;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-request-button .material-icons {
+    font-size: 1.25rem;
+}
+
+.filters-container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.create-request-button-container {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.create-request-button-container:hover {
+    background: #f1f5f9;
+    transform: translateY(-1px);
+}

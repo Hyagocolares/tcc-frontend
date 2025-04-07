@@ -1,11 +1,18 @@
 // src/interfaces/IDirectorConsent.ts
-import { IRequest } from './IRequest';
+import { IRequestId } from './IRequest';
 
 export interface IDirectorConsent {
   id: number;
-  signature: string;
   opinion?: string;
-  request: IRequest;
-  createdAt: Date;
-  updatedAt: Date;
+  status?: string;
+  request: IRequestId;
+  createdAt?: Date;
+  updatedAt?: Date;
+}
+export interface ICleanDirectorConsent {
+  opinion?: string;
+  status?: string;
+  request: IRequestId;
+  createdAt?: Date;
+  updatedAt?: Date;
 }

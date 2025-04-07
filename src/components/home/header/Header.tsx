@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     return (
         <header className="header-ufra">
             <img className="logo-placeholder-ufra" src="https://novo.ufra.edu.br/images/images/brasao-ufra-2017.png" alt="Logo da UFRA" />
-            <h1 className="header-title-ufra">UFRA</h1>
+            <h1 className="header-title-ufra">UFRA - Sistema de Solicitacao de Requerimentos</h1>
             <button className="logout-button-ufra" onClick={handleLogout}>
                 Sair
             </button>

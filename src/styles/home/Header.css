@@ -12,6 +12,7 @@
   width: calc(100% - var(--sidebar-width-collapsed));
   transition: all 0.3s ease;
   gap: 15px;
+  z-index: 1;
 }
 
 .logo-placeholder-ufra {

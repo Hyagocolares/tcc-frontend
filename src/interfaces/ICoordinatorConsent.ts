@@ -1,11 +1,14 @@
 // src/interfaces/ICoordinatorConsent.ts
-import { IRequest } from './IRequest';
 
 export interface ICoordinatorConsent {
   id: number;
-  signature: string;
-  opinion?: string;
-  request: IRequest;
+  opinion: string;
+  request: { id: number };
   createdAt: Date;
-  updatedAt: Date;
+  updatedAt?: Date;
+}
+
+export interface ICleanCoordinatorConsent {
+  opinion: string;
+  status: string;
 }

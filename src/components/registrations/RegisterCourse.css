@@ -1,0 +1,58 @@
+/* src/styles/request/RequestPage.css */
+
+.register-course-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-course-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.register-course-form .form-group {
+  margin-bottom: 20px;
+}
+
+.register-course-form .form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.register-course-form .form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.register-course-form .form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-course-form .form-submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-course-form .form-submit-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,60 @@
+/* src/components/registrations/RegisterUser.css */
+
+.register-user-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-user-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .register-user-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .register-user-form .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .register-user-form .form-input,
+  .register-user-form .form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-user-form .form-input:focus,
+  .register-user-form .form-select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .register-user-form .form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-user-form .form-button:hover {
+    background-color: #0056b3;
+  }

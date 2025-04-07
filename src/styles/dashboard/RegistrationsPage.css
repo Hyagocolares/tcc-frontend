@@ -1,0 +1,7 @@
+/* src/styles/dashboard/RegistrationsPage.css */
+.registrations-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
