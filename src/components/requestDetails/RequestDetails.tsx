@@ -111,6 +111,22 @@ interface Consent {
   discipline: Discipline
 }
 
+interface DirectorConsent {
+  id: number
+  accepted: boolean
+  opinion?: string
+  createdAt: string
+  updatedAt: string
+  userDirector: {
+    id: number
+    name: string
+    email: string
+  }
+  request: {
+    id: number
+  }
+}
+
 const ConsentSection: React.FC<{ request: IRequest, isLoadingConsents: boolean }> = ({ request, isLoadingConsents }) => {
   if (isLoadingConsents) {
     return (
@@ -245,6 +261,8 @@ const RequestDetails: React.FC = () => {
   const [request, setRequest] = useState<IRequest | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const [isLoadingConsents, setIsLoadingConsents] = useState<boolean>(false)
+  const [directorConsent, setDirectorConsent] = useState<DirectorConsent | null>(null)
+  const [isLoadingDirectorConsent, setIsLoadingDirectorConsent] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
   const { id } = useParams<{ id: string }>()
 
@@ -267,6 +285,17 @@ const RequestDetails: React.FC = () => {
         const data = await getRequestById(requestId)
         setRequest(data)
         setIsLoading(false)
+        
+        // Buscar o consentimento do diretor
+        setIsLoadingDirectorConsent(true)
+        try {
+          const response = await api.get(`/v1/consents/director/request/${requestId}`)
+          setDirectorConsent(response.data.consent)
+        } catch (err) {
+          console.error('Erro ao buscar consentimento do diretor:', err)
+        } finally {
+          setIsLoadingDirectorConsent(false)
+        }
         
         // Se houver consentimentos, buscar informações adicionais
         if (data.consent && data.consent.length > 0) {
@@ -368,7 +397,10 @@ const RequestDetails: React.FC = () => {
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaUser /> Usuário Responsável</h3>
+          <h3 className="section-title">
+            <FaUser size={20} />
+            Usuário Responsável
+          </h3>
           <div className="section-content">
             <div className="info-item">
               <span className="info-label">Nome:</span>
@@ -392,7 +424,10 @@ const RequestDetails: React.FC = () => {
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaUsers /> Acompanhantes</h3>
+          <h3 className="section-title">
+            <FaUsers size={20} />
+            Acompanhantes
+          </h3>
           <div className="section-content">
             {request.companions.length > 0 ? (
               <div className="companions-list">
@@ -406,20 +441,26 @@ const RequestDetails: React.FC = () => {
                 ))}
               </div>
             ) : (
-              <p className="empty-message">Nenhum companion adicionado.</p>
+              <p className="empty-message">Nenhum acompanhante adicionado.</p>
             )}
           </div>
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaBook /> Disciplinas</h3>
+          <h3 className="section-title">
+            <FaBook size={20} />
+            Disciplinas
+          </h3>
           <div className="section-content">
             <SubjectsSection subjects={request.subjects} />
           </div>
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaMapMarkerAlt /> Locais</h3>
+          <h3 className="section-title">
+            <FaMapMarkerAlt size={20} />
+            Locais
+          </h3>
           <div className="section-content">
             {request.locations.length > 0 ? (
               <div className="locations-list">
@@ -452,7 +493,10 @@ const RequestDetails: React.FC = () => {
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaRoute /> Itinerário</h3>
+          <h3 className="section-title">
+            <FaRoute size={20} />
+            Itinerário
+          </h3>
           <div className="section-content">
             {request.itinerary.length > 0 ? (
               <div className="itinerary-list">
@@ -502,7 +546,10 @@ const RequestDetails: React.FC = () => {
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaBox /> Recursos</h3>
+          <h3 className="section-title">
+            <FaBox size={20} />
+            Recursos
+          </h3>
           <div className="section-content">
             {request.resources.length > 0 ? (
               <div className="resources-list">
@@ -529,9 +576,54 @@ const RequestDetails: React.FC = () => {
         </section>
 
         <section className="request-section">
-          <h3 className="section-title"><FaCheckCircle /> Consentimentos</h3>
+          <h3 className="section-title">
+            <FaCheckCircle size={20} />
+            Consentimentos
+          </h3>
           <div className="section-content">
             <ConsentSection request={request} isLoadingConsents={isLoadingConsents} />
+          </div>
+        </section>
+      </div>
+
+      <div className="request-footer">
+        <section className="request-section">
+          <h3 className="section-title">
+            <FaUserTie size={20} />
+            Consentimento do Diretor
+          </h3>
+          <div className="section-content">
+            {isLoadingDirectorConsent ? (
+              <div className="loading-spinner">
+                <FaSpinner size={20} />
+                <span>Carregando consentimento do diretor...</span>
+              </div>
+            ) : directorConsent ? (
+              <div className="consent-item">
+                <p>
+                  <strong>Status:</strong>{' '}
+                  <span className={`status-badge ${directorConsent.accepted ? 'approved' : 'rejected'}`}>
+                    {directorConsent.accepted ? 'Aprovado' : 'Rejeitado'}
+                  </span>
+                </p>
+                {directorConsent.opinion && (
+                  <p>
+                    <strong>Opinião:</strong> {directorConsent.opinion}
+                  </p>
+                )}
+                <p>
+                  <strong>Data de Criação:</strong> {new Date(directorConsent.createdAt).toLocaleString()}
+                </p>
+                <p>
+                  <strong>Última Atualização:</strong> {new Date(directorConsent.updatedAt).toLocaleString()}
+                </p>
+                <p>
+                  <strong>Diretor:</strong> {directorConsent.userDirector.name} ({directorConsent.userDirector.email})
+                </p>
+              </div>
+            ) : (
+              <p className="empty-message">Nenhum consentimento do diretor registrado.</p>
+            )}
           </div>
         </section>
       </div>
